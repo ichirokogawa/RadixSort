@@ -5,7 +5,7 @@ public class RadixSort {
 
     public static void main(String[] args) {
 
-        var arr = generateRandomArray(1000, 1, 9999);
+        var arr = generateRandomArray(0, 1, 9999);
 
         System.out.println("Ori:");
         System.out.println(Arrays.toString(arr));
@@ -20,6 +20,10 @@ public class RadixSort {
      * @param arr 非負の整数Array
      */
     private static void radixSort(int[] arr) {
+        if (arr.length <= 2) {
+            return;
+        }
+
         var max = getMax(arr);
         for (var exp = 1; max / exp > 0; exp *= 10) {
             countingSortByDigit(arr, exp);
@@ -28,6 +32,9 @@ public class RadixSort {
 
     @SuppressWarnings("SameParameterValue")
     private static int[] generateRandomArray(int size, int min, int max) {
+        if (size < 0){
+            throw new IllegalArgumentException("size cannot be less than 0");
+        }
 
         if (min > max){
             throw new IllegalArgumentException("min cannot be greater than max");
