@@ -20,7 +20,7 @@ public class RadixSort {
      * @param arr 非負の整数Array
      */
     private static void radixSort(int[] arr) {
-        if (arr.length <= 2) {
+        if (arr.length <= 1) {
             return;
         }
 
