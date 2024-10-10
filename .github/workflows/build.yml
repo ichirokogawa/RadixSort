@@ -11,6 +11,7 @@ jobs:
       
       - uses: actions/setup-java@v4.4.0
         with:
+          distribution: oracle
           java-version: 23
         
       - name: Build
