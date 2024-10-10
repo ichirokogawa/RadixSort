@@ -4,4 +4,4 @@
 
 ## Build status
 
-[![build](https://github.com/ichirokogawa/RadixSort/actions/workflows/build.yml/badge.svg)](https://github.com/ichirokogawa/RadixSort/actions/workflows/build.yml)
+[![build](https://github.com/ichirokogawa/RadixSort/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/ichirokogawa/RadixSort/actions/workflows/build.yml)
